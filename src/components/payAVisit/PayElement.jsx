@@ -1,7 +1,7 @@
 import React from "react";
 import { email, location, phone } from "../../assets/icons";
 
-const PayElement = ({ middle }) => {
+const PayElement = () => {
   const elements = [
     {
       name: "Pay a Visit",
