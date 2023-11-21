@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "wagonBold";
+  src: url("./assets/fonts/Wagon-Bold.otf") format("otf");
+}
+@font-face {
+  font-family: "wagonExtraLight";
+  src: url("./assets/fonts/Wagon-ExtraLight.otf") format("otf");
+}
+@font-face {
+  font-family: "wagonExtraLightItalic";
+  src: url("./assets/fonts/Wagon-ExtraLightItalic.otf") format("otf");
+}
+@font-face {
+  font-family: "teko";
+  src: url("./assets/fonts/Teko-VariableFont_wght.ttf") format("ttf");
+}
