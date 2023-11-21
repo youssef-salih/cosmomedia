@@ -13,6 +13,8 @@ export default {
       fontFamily: {
         ephis: ["ephis", "sans-serif"],
         teko: ["Teko"],
+        stick: ["Stick No Bills", "sans-serif"],
+        montserat: ["Montserrat Alternates"],
       },
     },
   },
