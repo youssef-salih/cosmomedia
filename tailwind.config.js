@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        "new-black": "#0B0B0F",
+        "new-black": "#181818",
         myorange: "#EF4824",
       },
       backgroundImage: {

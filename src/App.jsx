@@ -4,7 +4,7 @@ import Navbar from "./components/navbar/Navbar";
 import { paths } from "./routes";
 function App() {
   return (
-    <div className="relative font-teko  h-screen container mx-auto text-white ">
+    <div className="relative font-teko  h-full container mx-auto text-white ">
       <Router>
         <Navbar />
         <Routes>
