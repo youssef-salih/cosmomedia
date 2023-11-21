@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,4 +19,8 @@
 @font-face {
   font-family: "teko";
   src: url("./assets/fonts/Teko-VariableFont_wght.ttf") format("ttf");
+}
+@font-face {
+  font-family: "ephis";
+  src: url("./assets//fonts/Ephesis-Regular.ttf");
 }

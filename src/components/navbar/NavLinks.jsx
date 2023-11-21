@@ -23,7 +23,7 @@ const NavLinks = () => {
   return (
     <>
       {links.map((link) => (
-        <li className="p-5">
+        <li className="">
           <Link to="#">{link.name}</Link>
         </li>
       ))}
