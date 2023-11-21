@@ -33,7 +33,7 @@ const PayElement = ({ middle }) => {
             <img src={element.icon} alt="location" className="w-8 mt-1" />
             <p className="flex flex-col">
               {element.name}
-              <span className="text-xl font-thin">{element.data}</span>
+              <span className="text-xl font-thin">{element.data}a</span>
             </p>
           </div>
         </>
