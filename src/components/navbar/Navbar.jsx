@@ -4,7 +4,7 @@ import Button from "../button/Button";
 import { logo } from "../../assets/icons";
 const Navbar = () => {
   return (
-    <nav className="flex font-medium text-2xl capitalize w-full justify-between p-5 items-center">
+    <nav className="container mx-auto  flex font-medium text-2xl capitalize w-full justify-between p-5 items-center">
       <img src={logo} alt="logo" className="select-none " />
       <div className="flex gap-24 items-center">
         <ul className="flex gap-6 items-center">
