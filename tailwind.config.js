@@ -6,6 +6,7 @@ export default {
       colors: {
         "new-black": "#181818",
         myorange: "#EF4824",
+        kaki: "#CF4325",
       },
       backgroundImage: {
         texture: "./assets/Texture.svg",

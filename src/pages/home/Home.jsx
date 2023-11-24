@@ -2,10 +2,12 @@ import React from "react";
 import home from "../../assets/image/home.png";
 import PayAVisit from "../../components/payAVisit/PayAVisit";
 import Services from "../../components/services/Services";
+import LetsMake from "../../components/letsMake/LetsMake";
+import Projects from "../../components/projects/Projects";
 const Home = () => {
   return (
-    <>
-      <div className="flex px-4 items-center ">
+    <div className="">
+      <div className="flex px-4 items-center container mx-auto">
         <div className="w-1/2 flex flex-col pt-[5%] pl-5">
           <p className="text-8xl w-2/3">We Create Impactful Stories</p>
           <p className="w-3/4 text-2xl font-montserat">
@@ -19,10 +21,12 @@ const Home = () => {
         </div>
       </div>
       <PayAVisit />
-      <div className="relative">
+      <div className="relative mb-24 container mx-auto">
         <Services />
       </div>
-    </>
+      <LetsMake />
+      <Projects />
+    </div>
   );
 };
 
