@@ -4,6 +4,8 @@ import PayAVisit from "../../components/payAVisit/PayAVisit";
 import Services from "../../components/services/Services";
 import LetsMake from "../../components/letsMake/LetsMake";
 import Projects from "../../components/projects/Projects";
+import WorkProcess from "../../components/workProcess/WorkProcess";
+
 const Home = () => {
   return (
     <div className="">
@@ -26,6 +28,10 @@ const Home = () => {
       </div>
       <LetsMake />
       <Projects />
+
+        <WorkProcess />
+        <Projects />
+
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Project from "./Project";
-import WorkProcess from "../workProcess/WorkProcess";
+
 
 const Projects = () => {
   return (
@@ -25,9 +25,7 @@ const Projects = () => {
           <Project />
         </div>
       </div>
-      <div>
-        <WorkProcess />
-      </div>
+    
     </>
   );
 };
