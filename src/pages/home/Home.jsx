@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <div className="">
       <motion.div className="flex px-4 items-center container mx-auto">
-        <Reveal>
+        <Reveal style={"flex"}>
           <div className="w-1/2 flex flex-col pt-[5%] pl-5">
             <p className="text-8xl w-2/3">We Create Impactful Stories</p>
             <p className="w-3/4 text-2xl font-montserat">
@@ -28,23 +28,24 @@ const Home = () => {
       </motion.div>
 
       <PayAVisit />
-      <motion.div
-        className="relative mb-24 container mx-auto"
-        whileInView={{
-          opacity: 1,
-          transition: {
-            duration: 0.9,
-          },
-        }}
-      >
-        <Services />
+      <motion.div className="relative mb-24 container mx-auto">
+        <Reveal>
+          <Services />
+        </Reveal>
       </motion.div>
+
       <LetsMake />
-      <Projects />
+
+      <Reveal>
+        <Projects />
+      </Reveal>
+
       <div className="bg-[#FFF2F2] -mx-60 -rotate-6 h-max py-24">
-        <div className="container mx-auto pt-16 rotate-6">
-          <WorkProcess />
-        </div>
+        <Reveal width="100%">
+          <div className=" pt-16 rotate-6">
+            <WorkProcess />
+          </div>
+        </Reveal>
       </div>
     </div>
   );
