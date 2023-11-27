@@ -19,19 +19,22 @@ const Reveal = ({ width = "fit-content", children, style }) => {
   }, [isInView]);
 
   return (
-    <motion.div
-      ref={ref}
-      className={`relative container mx-auto ${style}`}
-      style={{
-        width,
-      }}
-      variants={reaveal}
-      initial="hidden"
-      animate={mainControls}
-      transition={{ duration: 0.9, delay: 0.25 }}
-    >
-      {children}
-    </motion.div>
+    <>
+      <motion.div
+        ref={ref}
+        className={`relative container mx-auto ${style}`}
+        style={{
+          width,
+          zIndex: 999,
+        }}
+        variants={reaveal}
+        initial="hidden"
+        animate={mainControls}
+        transition={{ duration: 0.9, delay: 0.25 }}
+      >
+        {children}
+      </motion.div>
+    </>
   );
 };
 

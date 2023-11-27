@@ -28,11 +28,10 @@ const Home = () => {
       </motion.div>
 
       <PayAVisit />
-      <motion.div className="relative mb-24 container mx-auto">
-        <Reveal>
-          <Services />
-        </Reveal>
-      </motion.div>
+
+      <Reveal style={"relative mb-24"}>
+        <Services />
+      </Reveal>
 
       <LetsMake />
 

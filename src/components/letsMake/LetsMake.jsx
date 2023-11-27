@@ -5,7 +5,7 @@ import { paper, scotch, scotch2 } from "../../assets/image";
 const LetsMake = () => {
   return (
     <>
-      <div className="bg-myorange w-[101%] h-96  rotate-2  z-30 -mx-2 relative shadow ">
+      <div className="bg-myorange w-[101%] h-96  rotate-2  z-20 -mx-2 relative shadow ">
         <div className="flex container mx-auto h-full items-center">
           <div className=" flex flex-col gap-4 w-1/2">
             <h1 className="text-8xl">Let's make things happen</h1>
@@ -24,7 +24,7 @@ const LetsMake = () => {
           </div>
         </div>
       </div>
-      <div className="bg-kaki w-[101%] h-96  -rotate-2  z-20 -mx-2 relative" />
+      <div className="bg-kaki w-[101%] h-96  -rotate-2  z-10 -mx-2 relative" />
     </>
   );
 };
