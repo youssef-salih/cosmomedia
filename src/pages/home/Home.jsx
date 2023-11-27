@@ -5,6 +5,7 @@ import Services from "../../components/services/Services";
 import LetsMake from "../../components/letsMake/LetsMake";
 import Projects from "../../components/projects/Projects";
 import WorkProcess from "../../components/workProcess/WorkProcess";
+import WorkProcessAccordion from "../../components/workProcess/WorkProcessAccordion";
 
 const Home = () => {
   return (
@@ -28,10 +29,11 @@ const Home = () => {
       </div>
       <LetsMake />
       <Projects />
-
+      <div className="bg-[#FFF2F2] -mx-60 rotate-6 h-full ">
         <WorkProcess />
-        <Projects />
-
+        <WorkProcessAccordion />
+      </div>
+      <Projects />
     </div>
   );
 };
