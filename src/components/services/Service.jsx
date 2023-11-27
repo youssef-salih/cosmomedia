@@ -23,8 +23,11 @@ const Service = () => {
   return (
     <>
       <div className="flex gap-4 justify-center">
-        {element.map((serv) => (
-          <div className="bg-white w-80 h-96 mt-16 rounded-2xl flex flex-col justify-evenly">
+        {element.map((serv, i) => (
+          <div
+            className="bg-white w-80 h-96 mt-16 rounded-2xl flex flex-col justify-evenly"
+            key={i}
+          >
             <h1 className="text-myorange font-teko text-4xl px-9  ">
               {serv.name}
             </h1>

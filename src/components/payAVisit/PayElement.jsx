@@ -23,20 +23,19 @@ const PayElements = () => {
 
   return (
     <>
-      {elements.map((element) => (
-        <>
-          <div
-            className={`text-6xl flex items-start gap-2 px-24 ${
-              element.middle ? "border-l border-r  border-white" : ""
-            }`}
-          >
-            <img src={element.icon} alt="location" className="w-8 mt-1" />
-            <p className="flex flex-col">
-              {element.name}
-              <span className="text-xl font-thin">{element.data}a</span>
-            </p>
-          </div>
-        </>
+      {elements.map((element, i) => (
+        <div
+          key={i}
+          className={`text-6xl flex items-start gap-2 px-24 ${
+            element.middle ? "border-l border-r  border-white" : ""
+          }`}
+        >
+          <img src={element.icon} alt="location" className="w-8 mt-1" />
+          <p className="flex flex-col">
+            {element.name}
+            <span className="text-xl font-thin">{element.data}a</span>
+          </p>
+        </div>
       ))}
     </>
   );
