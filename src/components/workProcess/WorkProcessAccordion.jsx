@@ -6,18 +6,28 @@ const WorkProcessAccordion = ({ name, desc, icon }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div
-      className="bg-[#282828] z-50 relative rounded-lg min-h-[176px] px-16 py-8 flex mt-3 justify-between items-center select-none"
+      className="bg-[#282828] z-50 relative rounded-lg ms:min-h-[176px]   md:px-16 px-8 py-8 flex mt-3 justify-between flex-wrap items-center select-none mx-4"
       onClick={() => setIsOpen(!isOpen)}
     >
-      <div className="flex items-center gap-4">
+      <div className="flex  items-center gap-4">
         <div className="max-w-fit">
           <img
             src={icon}
             alt=""
-            className={isOpen ? `w-20` : `w-20 text-white opacity-75`}
+            className={
+              isOpen
+                ? `lg:w-20 w-8 order-1`
+                : `lg:w-20 w-8 text-white opacity-75 order-1`
+            }
           />
         </div>
-        <div className={isOpen ? `text-5xl` : `text-5xl text-white opacity-75`}>
+        <div
+          className={
+            isOpen
+              ? `lg:text-4xl md:text-3xl text-lg order-2`
+              : `lg:text-4xl md:text-3xl text-lg text-white opacity-75 order-2`
+          }
+        >
           {" "}
           {name}
         </div>
@@ -25,7 +35,7 @@ const WorkProcessAccordion = ({ name, desc, icon }) => {
       <AnimatePresence>
         {isOpen ? (
           <motion.div
-            className="max-w-xl  font-montserat text-lg text-white text-opacity-75 "
+            className="max-w-xl  font-montserat text-xs lg:text-lg text-white text-opacity-75 lg:order-3 order-4 "
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ ease: "easeInOut" }}
@@ -39,11 +49,14 @@ const WorkProcessAccordion = ({ name, desc, icon }) => {
         <img
           src={arrowDown}
           alt=""
-          className="-rotate-180 transition-all duration-700"
+          className="-rotate-180 transition-all duration-700  w-5 lg:order-4 order-3 "
         />
       ) : (
-        // <img src={arrowUp} alt="" className="" />
-        <img src={arrowDown} alt="" className="transition-all duration-700" />
+        <img
+          src={arrowDown}
+          alt=""
+          className="transition-all duration-700  w-5  lg:order-4 order-3 "
+        />
       )}
     </div>
   );

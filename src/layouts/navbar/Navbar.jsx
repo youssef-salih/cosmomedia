@@ -17,10 +17,10 @@ const Navbar = () => {
     }),
   };
   return (
-    <nav className="container mx-auto px-7 md:p-5 flex  font-medium text-2xl capitalize w-full justify-between p-5 items-center">
+    <nav className="container mx-auto px-7 lg:p-5 flex  font-medium text-2xl capitalize w-full justify-between p-5 items-center">
       <div className="flex items-center">
-        <img src={logo} alt="logo" className="select-none md:w-16 w-8 " />
-        <motion.div className="font-stick md:text-3xl flex">
+        <img src={logo} alt="logo" className="select-none lg:w-16 w-8 " />
+        <motion.div className="font-stick lg:text-3xl flex">
           {logoName.map((e, i) => (
             <motion.div
               key={i}
@@ -35,7 +35,7 @@ const Navbar = () => {
         </motion.div>
       </div>
 
-      <div className="hidden md:flex gap-24 items-center">
+      <div className="hidden lg:flex gap-24 items-center">
         <ul className="flex gap-6 items-center">
           <NavLinks />
         </ul>
@@ -48,7 +48,7 @@ const Navbar = () => {
         </Button>
       </div>
 
-      <img src={menu} alt="menu" className="md:hidden select-none  w-7 " />
+      <img src={menu} alt="menu" className="lg:hidden select-none  w-7 " />
     </nav>
   );
 };

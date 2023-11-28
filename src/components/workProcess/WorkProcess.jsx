@@ -29,9 +29,9 @@ const WorkProcess = () => {
   return (
     <>
       {" "}
-      <div className="px-16">
-        <h1 className="text-[#F64E2A] text-8xl">WorkProcess</h1>
-        <p className="font-montserat  text-black ">
+      <div className="md:px-16 px-4">
+        <h1 className="text-[#F64E2A] md:text-8xl text-6xl">WorkProcess</h1>
+        <p className="font-montserat text-xs md:text-base text-black ">
           Explore Real-Life Examples of Our Proven Digital Marketing Success
           through Our Projects
         </p>

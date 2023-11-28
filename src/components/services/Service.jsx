@@ -22,10 +22,10 @@ const Service = () => {
   ];
   return (
     <>
-      <div className="flex gap-4 justify-center">
+      <div className="flex flex-wrap md:gap-4 justify-center">
         {element.map((serv, i) => (
           <div
-            className="bg-white w-80 h-96 mt-16 rounded-2xl flex flex-col justify-evenly"
+            className="bg-white w-4/5 md:w-80 h-96 md:mt-16 mt-8 rounded-2xl flex flex-col justify-evenly"
             key={i}
           >
             <h1 className="text-myorange font-teko text-4xl px-9  ">
