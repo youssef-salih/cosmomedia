@@ -6,13 +6,13 @@ import LetsMake from "../../components/letsMake/LetsMake";
 import Projects from "../../components/projects/Projects";
 import WorkProcess from "../../components/workProcess/WorkProcess";
 import { motion } from "framer-motion";
-import Reveal from "../../components/reveal/Reveal";
+import { RevealFromBottom } from "../../components/reveal/Reveal";
 
 const Home = () => {
   return (
     <div className="">
       <motion.div className="flex px-4 items-center container mx-auto">
-        <Reveal style={"flex"}>
+        <RevealFromBottom style={"flex"}>
           <div className="w-1/2 flex flex-col pt-[5%] pl-5">
             <p className="text-8xl w-2/3">We Create Impactful Stories</p>
             <p className="w-3/4 text-2xl font-montserat">
@@ -24,27 +24,27 @@ const Home = () => {
           <div className="">
             <img src={home} alt="" />
           </div>
-        </Reveal>
+        </RevealFromBottom>
       </motion.div>
 
       <PayAVisit />
 
-      <Reveal style={"relative mb-24"}>
+      <RevealFromBottom style={"relative mb-24"}>
         <Services />
-      </Reveal>
+      </RevealFromBottom>
 
       <LetsMake />
 
-      <Reveal>
+      <RevealFromBottom>
         <Projects />
-      </Reveal>
+      </RevealFromBottom>
 
       <div className="bg-[#FFF2F2] -mx-60 -rotate-6 h-max py-24">
-        <Reveal width="100%">
+        <RevealFromBottom width="100%">
           <div className=" pt-16 rotate-6">
             <WorkProcess />
           </div>
-        </Reveal>
+        </RevealFromBottom>
       </div>
     </div>
   );

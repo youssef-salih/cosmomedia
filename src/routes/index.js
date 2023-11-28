@@ -5,4 +5,8 @@ export const paths = [
     path: "/",
     component: Home,
   },
+  {
+    path: "*",
+    component: Home,
+  },
 ];

@@ -5,4 +5,5 @@ import email from "../icons/email.svg";
 import consultation from "../icons/consultation.svg";
 import arrowDown from "../icons/arrowDown.svg";
 import arrowUp from "../icons/arrowUp.svg";
-export { logo, phone, location, email, consultation, arrowDown, arrowUp };
+import menu from "../icons/menu.svg";
+export { logo, phone, location, email, consultation, arrowDown, arrowUp, menu };

@@ -1,6 +1,5 @@
 import React from "react";
 import Service from "./Service";
-import Reveal from "../reveal/Reveal";
 
 const Services = () => {
   return (
