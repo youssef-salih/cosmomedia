@@ -1,4 +1,5 @@
 import logo from "../icons/logo.svg";
+import logoBW from "../icons/logoBW.svg";
 import phone from "../icons/phone.svg";
 import location from "../icons/location.svg";
 import email from "../icons/email.svg";
@@ -6,4 +7,14 @@ import consultation from "../icons/consultation.svg";
 import arrowDown from "../icons/arrowDown.svg";
 import arrowUp from "../icons/arrowUp.svg";
 import menu from "../icons/menu.svg";
-export { logo, phone, location, email, consultation, arrowDown, arrowUp, menu };
+export {
+  logo,
+  phone,
+  location,
+  email,
+  consultation,
+  arrowDown,
+  arrowUp,
+  menu,
+  logoBW,
+};

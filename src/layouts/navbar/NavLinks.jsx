@@ -1,27 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { links } from "../links";
 
 const NavLinks = () => {
-  const links = [
-    {
-      name: "home",
-      path: "/",
-    },
-    {
-      name: "projects",
-      path: "/projects",
-    },
-    {
-      name: "about us",
-      path: "/about",
-    },
-    {
-      name: "services",
-      path: "/services",
-    },
-  ];
-
   const transition = {
     duration: 0.3,
     ease: "easeInOut",

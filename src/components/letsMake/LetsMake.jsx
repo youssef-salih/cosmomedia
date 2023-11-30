@@ -24,9 +24,9 @@ const LetsMake = () => {
                 </Button>
               </div>
               <div className="relative mx-auto hidden md:flex">
-                <img src={scotch} alt="" className="absolute bottom-5" />
-                <img src={scotch2} alt="" className="absolute right-2 top-5" />
-                <img src={paper} alt="" className="top-0 z-30" />
+                <img src={scotch} alt="" className="absolute bottom-5 z-20" />
+                <img src={scotch2} alt="" className="absolute right-2 top-5 z-20" />
+                <img src={paper} alt="" className="top-0 z-10" />
               </div>
             </motion.div>
           </RevealsideContent>

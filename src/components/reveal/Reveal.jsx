@@ -76,8 +76,8 @@ const RevealsideContent = ({ children, style }) => {
   const mainControls = useAnimation();
 
   const reaveal = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { delay: 2 } },
+    hidden: { opacity: 0, visibility: 0 },
+    visible: { opacity: 1, transition: { delay: 5 } },
   };
 
   useEffect(() => {
