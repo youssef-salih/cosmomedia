@@ -3,17 +3,16 @@ import Button from "../../components/button/Button";
 
 const Footer = () => {
   return (
-    <div className="text-white container mx-auto  md:mt-20 p-5">
-      <div className="bg-myorange w-full h-full rounded-3xl flex justify-between items-center px-4">
-        <div className="lg:ml-16 lg:mt-4">
-          <p className="lg:text-7xl text-xl w-7/12 lg:p-5">
-            Let's Build and Scale Together!
-          </p>
-        </div>
-        <div className="p-5">
+    <div className="text-white px-[5vw]  md:mt-[5vw] p-[2vw]">
+      <div className="bg-myorange w-full h-full rounded-[2vw] flex justify-between items-center px-[4vw] p-[1vw]">
+        <p className="lg:text-[4vw] leading-none text-[6vw] lg:w-1/4 w-1/2 lg:p-[1vw] lg:ml-[4vw] lg:mt-[1vw]">
+          Let&apos;s Build and Scale Together!
+        </p>
+
+        <div className="">
           <Button
             style={
-              "bg-black lg:px-28 px-8 py-4 h-full rounded-2xl lg:text-4xl hover:scale-105 transition-all duration-700 "
+              "bg-black lg:px-[5vw] px-[7vw] py-[2vw] h-full rounded-[1vw] lg:text-[2vw] hover:scale-105 transition-all duration-700 "
             }
           >
             Contact Us

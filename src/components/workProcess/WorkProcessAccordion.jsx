@@ -6,27 +6,25 @@ const WorkProcessAccordion = ({ name, desc, icon }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div
-      className="bg-[#282828] z-50 relative rounded-lg ms:min-h-[176px]   md:px-16 px-8 py-8 flex mt-3 justify-between flex-wrap items-center select-none mx-4"
+      className="bg-[#282828] z-50 relative rounded-lg min-h-[12vw] md:px-[4vw] px-[6vw] py-[4vw] lg:py-[2vw] flex mt-[1vw] justify-between flex-wrap items-center select-none mx-[2vw]"
       onClick={() => setIsOpen(!isOpen)}
     >
-      <div className="flex  items-center gap-4">
+      <div className="flex  items-center gap-[2vw]">
         <div className="max-w-fit">
           <img
             src={icon}
-            alt=""
+            alt={name}
             className={
               isOpen
-                ? `lg:w-20 w-8 order-1`
-                : `lg:w-20 w-8 text-white opacity-75 order-1`
+                ? `lg:w-[5vw] w-[8vw] order-1`
+                : `lg:w-[5vw] w-[8vw] text-white opacity-75 order-1`
             }
           />
         </div>
         <div
-          className={
-            isOpen
-              ? `lg:text-4xl md:text-3xl text-lg order-2`
-              : `lg:text-4xl md:text-3xl text-lg text-white opacity-75 order-2`
-          }
+          className={`lg:text-[2.5vw]  text-[5vw] ${
+            isOpen ? ` order-2` : `text-white opacity-75 order-2`
+          }`}
         >
           {" "}
           {name}
@@ -35,7 +33,7 @@ const WorkProcessAccordion = ({ name, desc, icon }) => {
       <AnimatePresence>
         {isOpen ? (
           <motion.div
-            className="max-w-xl  font-montserat text-xs lg:text-lg text-white text-opacity-75 lg:order-3 order-4 "
+            className="lg:max-w-[40vw] lg:mt-0 mt-[2vw] font-montserat text-[3vw] lg:text-[1vw] text-white text-opacity-75 lg:order-3 order-4 "
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ ease: "easeInOut" }}
@@ -49,13 +47,13 @@ const WorkProcessAccordion = ({ name, desc, icon }) => {
         <img
           src={arrowDown}
           alt=""
-          className="-rotate-180 transition-all duration-700  w-5 lg:order-4 order-3 "
+          className="-rotate-180 transition-all duration-700  lg:w-[2vw] w-[4vw] lg:order-4 order-3 "
         />
       ) : (
         <img
           src={arrowDown}
           alt=""
-          className="transition-all duration-700  w-5  lg:order-4 order-3 "
+          className="transition-all duration-700 lg:w-[2vw] w-[4vw]  lg:order-4 order-3 "
         />
       )}
     </div>

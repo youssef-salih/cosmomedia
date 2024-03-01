@@ -49,10 +49,10 @@ const Navbar = () => {
 
   return (
     <header>
-      <nav className="container mx-auto px-7 lg:p-5 flex  font-medium text-2xl capitalize w-full justify-between p-5 items-center">
+      <nav className="px-[5vw] lg:pt-0 pt-[2vw] flex font-medium text-[1.5vw] capitalize justify-between  items-center">
         <div className="flex items-center">
-          <img src={logo} alt="logo" className="select-none lg:w-16 w-8 " />
-          <motion.div className="font-stick lg:text-3xl flex">
+          <img src={logo} alt="logo" className="select-none w-[5vw] " />
+          <motion.div className="font-stick lg:text-[2vw] text-[4vw] flex">
             {logoName.map((e, i) => (
               <motion.div
                 key={i}
@@ -67,13 +67,13 @@ const Navbar = () => {
           </motion.div>
         </div>
 
-        <div className="hidden lg:flex gap-24 items-center">
-          <ul className="flex gap-6 items-center">
+        <div className="hidden lg:flex gap-[5vw] items-center">
+          <ul className="flex gap-[2vw] items-center">
             <NavLinks />
           </ul>
           <Button
             style={
-              "border border-white px-9 py-3 uppercase items-center hover:bg-myorange transition "
+              "border border-white px-[2.5vw] py-[1.2vw] uppercase items-center hover:bg-myorange transition leading-none"
             }
           >
             contact us
@@ -83,7 +83,7 @@ const Navbar = () => {
         <img
           src={menu}
           alt="menu"
-          className="lg:hidden select-none w-7 "
+          className="lg:hidden select-none w-[5vw] "
           onClick={() => setToggleMenu(true)}
         />
       </nav>
@@ -103,13 +103,12 @@ const Navbar = () => {
                 animate="animate"
                 className="flex justify-between items-center"
               >
-                <h1 className="">
-                  <img
-                    src={logoBW}
-                    alt="logo"
-                    className="select-none lg:w-16 w-8 "
-                  />
-                </h1>
+                <img
+                  src={logoBW}
+                  alt="logo"
+                  className="select-none lg:w-16 w-8 "
+                />
+
                 <p
                   className="cursor-pointer text-xl text-black"
                   onClick={() => setToggleMenu(false)}

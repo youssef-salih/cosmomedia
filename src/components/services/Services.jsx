@@ -3,17 +3,21 @@ import Service from "./Service";
 
 const Services = () => {
   return (
-    <div className="h-full pl-5 md:pt-24 pt-12  ">
-      <h1 className="lg:text-8xl text-6xl text-myorange">Our Services</h1>
+    <>
+      <div className="h-full pl-[5vw] md:pt-[2vw] pt-[5vw]">
+        <h1 className="lg:text-[6vw] text-[16vw] text-myorange leading-none">
+          Our Services
+        </h1>
 
-      <p className="font-montserat text-xs md:w-1/3">
-        At our digital marketing agency, we offer a range of services to help
-        businesses grow and succeed online.
-      </p>
-      <div className="mx-auto md:w-full">
+        <p className="font-montserat lg:text-[1vw] text-[3vw] md:w-1/3">
+          At our digital marketing agency, we offer a range of services to help
+          businesses grow and succeed online.
+        </p>
+      </div>
+      <div className="w-full mt-[2vw]">
         <Service />
       </div>
-    </div>
+    </>
   );
 };
 

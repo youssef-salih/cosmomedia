@@ -9,15 +9,22 @@ import Loader from "./components/loader/Loader";
 import "./App.css";
 
 function App() {
-  const [loaderFinished, setLoaderFinished] = useState(false);
+  const [loaderFinished, setLoaderFinished] = useState(true);
   useEffect(() => {
     setInterval(() => {
       setLoaderFinished(true);
     }, 5000);
   }, []);
+  useEffect(() => {
+    (async () => {
+      const LocomotiveScroll = (await import("locomotive-scroll")).default;
+      // eslint-disable-next-line no-unused-vars
+      const locomotiveScroll = new LocomotiveScroll();
+    })();
+  }, []);
 
   return (
-    <div className="relative font-teko h-full text-white">
+    <div className="relative font-teko h-full text-white ">
       {loaderFinished ? (
         <Router>
           <Navbar />

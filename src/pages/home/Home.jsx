@@ -11,29 +11,33 @@ import { RevealFromBottom } from "../../components/reveal/Reveal";
 const Home = () => {
   return (
     <>
-      <motion.div className="flex   px-4 items-center container mx-auto">
-        <RevealFromBottom style={"flex flex-col lg:flex-row"}>
-          <div className="lg:w-1/2 flex flex-col  pt-[5%] pl-5">
-            <p className="text-8xl lg:w-2/3 text-center md:text-start">
+      <motion.div className="flex items-center">
+        <RevealFromBottom style={"flex flex-col lg:flex-row px-[5vw]"}>
+          <div className="pt-[2vw] lg:w-1/2">
+            <p className="lg:text-[8vw] text-[22vw]  text-center md:text-start leading-none">
               We Create Impactful Stories
             </p>
-            <p className="lg:w-3/4 text-2xl font-montserat text-center md:text-start">
+            <p className=" lg:text-[1.5vw] text-[5vw] font-montserat text-center md:text-start">
               Our digital marketing agency helps businesses grow and succeed
               online through a range of services including SEO, PPC, social
               media marketing, and content creation.
             </p>
           </div>
           <div className="flex justify-center">
-            <img src={home} alt="" />
+            <img
+              src={home}
+              alt="home image"
+              className="lg:w-[50vw] md:w-[70vw]  "
+            />
           </div>
         </RevealFromBottom>
       </motion.div>
 
-      <div className="px-4">
+      <div className="px-[2vw]">
         <PayAVisit />
       </div>
 
-      <RevealFromBottom style={"relative mb-24"}>
+      <RevealFromBottom style={"relative mb-[5vw]"}>
         <Services />
       </RevealFromBottom>
 
@@ -43,9 +47,9 @@ const Home = () => {
         <Projects />
       </RevealFromBottom>
 
-      <div className="bg-[#FFF2F2] md:-mx-20 md:-rotate-6 h-max md:py-24 py-8 md:mb-36">
+      <div className="bg-[#FFF2F2] md:-mx-[4vw] md:-rotate-6 h-max md:py-[5vw] py-[2vw] md:mb-[2vw] px-[2vw] lg:px-[5vw]">
         <RevealFromBottom width="100%">
-          <div className=" md:pt-16 md:rotate-6">
+          <div className=" md:pt-[2vw] md:rotate-6">
             <WorkProcess />
           </div>
         </RevealFromBottom>

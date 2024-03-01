@@ -22,16 +22,20 @@ const Service = () => {
   ];
   return (
     <>
-      <div className="flex flex-wrap md:gap-4 justify-center">
+      <div className="flex flex-wrap gap-[2vw] justify-center w-screen  ">
         {element.map((serv, i) => (
           <div
-            className="bg-white w-4/5 md:w-80 h-96 md:mt-16 mt-8 rounded-2xl flex flex-col justify-evenly"
+            className="bg-white md:w-[22vw] md:h-[25vw] p-[1vw] w-[25vw] h-[35vw]  lg:rounded-[.5vw] rounded-[2vw]  flex flex-col justify-evenly"
             key={i}
           >
-            <h1 className="text-myorange font-teko text-4xl px-9  ">
+            <h1 className="text-myorange font-teko lg:text-[2vw] text-center  leading-none">
               {serv.name}
             </h1>
-            <img src={service} alt="" className="mx-auto mt-10" />
+            <img
+              src={service}
+              alt={serv.name}
+              className="w-[16vw] mx-auto mt-[1vw]"
+            />
           </div>
         ))}
       </div>

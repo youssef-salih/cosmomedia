@@ -26,16 +26,20 @@ const PayElements = () => {
       {elements.map((element, i) => (
         <div
           key={i}
-          className={`lg:text-6xl md:flex-row flex flex-col text-center md:text-start md:items-start justify-center items-center gap-2 lg:px-1/2 ${
+          className={`lg:text-[3vw] md:flex-row flex flex-col text-center md:text-start md:items-start justify-center items-center gap-[.5vw] lg:px-[5vw] ${
             element.middle
-              ? "md:border-l md:border-r md:border-t-0 md:border-b-0 border-t border-b  px-24 border-white "
+              ? "md:border-l md:border-r md:border-t-0 md:border-b-0 border-t border-b   border-white "
               : ""
           }`}
         >
-          <img src={element.icon} alt="location" className="md:w-6 lg:w-8 w-5 mt-1 " />
-          <p className="flex flex-col ">
+          <img
+            src={element.icon}
+            alt="location"
+            className="md:w-[2vw] lg:w-[1.8vw] w-[5vw] mt-[.4vw] "
+          />
+          <p className="flex flex-col leading-none">
             {element.name}
-            <span className="lg:text-xl md: font-thin">{element.data}a</span>
+            <span className="lg:text-[2vw]  font-thin">{element.data}a</span>
           </p>
         </div>
       ))}

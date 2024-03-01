@@ -27,9 +27,3 @@
   font-family: "ephis";
   src: url("./assets//fonts/Ephesis-Regular.ttf");
 }
-
-@layer base {
-  html {
-    @apply scroll-smooth;
-  }
-}
