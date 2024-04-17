@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { consultation } from "../../assets/icons";
 import WorkProcessAccordion from "./WorkProcessAccordion";
+import Titles from "../../common/Titles";
 
 const WorkProcess = () => {
   const processes = [
@@ -28,11 +29,8 @@ const WorkProcess = () => {
   ];
   return (
     <>
-      {" "}
       <div className=" px-[5vw]">
-        <h1 className="text-[#F64E2A] md:text-[6vw] text-[12vw]">
-          WorkProcess
-        </h1>
+        <Titles>WorkProcess</Titles>
         <p className="font-montserat text-[3vw] lg:text-[1vw] text-black ">
           Explore Real-Life Examples of Our Proven Digital Marketing Success
           through Our Projects

@@ -3,7 +3,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export const slideReveal = (bgRef, contentRef) => {
+export const slideReveal = (bgRef, contentRef, delay) => {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: bgRef,
@@ -14,9 +14,11 @@ export const slideReveal = (bgRef, contentRef) => {
   tl.fromTo(
     bgRef,
     { width: "0%" },
-    { duration: 2, width: "101%", ease: "power3.out" }
+    { duration: 2, width: "105%", ease: "power3.out", delay: delay }
   );
-  tl.fromTo(contentRef, { opacity: 0 }, { opacity: 1 });
+  if (contentRef) {
+    tl.fromTo(contentRef, { opacity: 0 }, { opacity: 1 });
+  }
 };
 
 export const workProcessAnimation = (textRef, isOpen) => {

@@ -28,7 +28,7 @@ const PayElements = () => {
           key={i}
           className={`lg:text-[3vw] md:flex-row flex flex-col text-center md:text-start md:items-start justify-center items-center gap-[.5vw] lg:px-[5vw] ${
             element.middle
-              ? "md:border-l md:border-r md:border-t-0 md:border-b-0 border-t border-b   border-white "
+              ? "md:border-l md:border-r md:border-t-0 md:border-b-0 border-t border-b   border-black "
               : ""
           }`}
         >
@@ -37,7 +37,7 @@ const PayElements = () => {
             alt="location"
             className="md:w-[2vw] lg:w-[1.8vw] w-[5vw] mt-[.4vw] "
           />
-          <p className="flex flex-col leading-none">
+          <p className="flex flex-col leading-none text-black">
             {element.name}
             <span className="lg:text-[2vw]  font-thin">{element.data}a</span>
           </p>

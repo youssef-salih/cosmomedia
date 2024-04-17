@@ -28,7 +28,7 @@ const Service = () => {
             className="bg-white md:w-[22vw] md:h-[25vw] p-[1vw] w-[25vw] h-[35vw]  lg:rounded-[.5vw] rounded-[2vw]  flex flex-col justify-evenly"
             key={i}
           >
-            <h1 className="text-myorange font-teko lg:text-[2vw] text-center  leading-none">
+            <h1 className="text-primary font-teko lg:text-[2vw] text-center  leading-none">
               {serv.name}
             </h1>
             <img

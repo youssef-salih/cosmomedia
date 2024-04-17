@@ -15,7 +15,7 @@ const NavLinks = () => {
         <motion.li key={index} className="relative flex items-center">
           <Link
             to={link.path}
-            className="before:bg-myorange before:w-0 before:h-[.2vw] before:absolute before:top-[.6vw] hover:before:w-full before:duration-500 before:transition-all text-[1.5vw] leading-none"
+            className="before:bg-primary before:w-0 before:h-[.2vw] before:absolute before:top-[.6vw] hover:before:w-full before:duration-500 before:transition-all text-[1.5vw] leading-none"
           >
             {link.name}
           </Link>

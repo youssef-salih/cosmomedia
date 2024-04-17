@@ -7,6 +7,7 @@ import Footer from "./layouts/footer/Footer";
 import Loader from "./components/loader/Loader";
 
 import "./App.css";
+import Loader2 from "./components/loader/Loader2.0";
 
 function App() {
   const [loaderFinished, setLoaderFinished] = useState(true);

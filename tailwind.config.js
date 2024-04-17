@@ -5,13 +5,16 @@ export default {
     extend: {
       colors: {
         "new-black": "#181818",
+        primary: "#00ECBE",
+        secondary: "#00B7C3",
         myorange: "#EF4824",
         kaki: "#CF4325",
       },
       backgroundImage: {
-        texture: "./assets/Texture.svg",
+        texture: "url('./src/assets/bg/main.svg')",
+        "main-gradient": "linear-gradient(to left, #00ECBE, #00B7C3)",
         "linear-pattern":
-          "linear-gradient(to bottom,rgb(239 72 36 / 70%),rgb(239 72 36 / 70%) 47%,transparent,transparent 47%,transparent,transparent 55%,rgb(239 72 36 / 70%) 50%,rgb(239 72 36 / 70%));",
+          "linear-gradient(to bottom, rgb(0 236 190 / 70%), rgb(0 236 190 / 70%) 47%, transparent, transparent 47%, transparent, transparent 55%, rgb(0 236 190 / 70%) 50%, rgb(0 236 190 / 70%))",
       },
       fontFamily: {
         ephis: ["ephis", "sans-serif"],

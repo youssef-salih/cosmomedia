@@ -48,11 +48,15 @@ const Navbar = () => {
   }, [toggleMenu]);
 
   return (
-    <header>
-      <nav className="px-[5vw] lg:pt-0 pt-[2vw] flex font-medium text-[1.5vw] capitalize justify-between  items-center">
-        <div className="flex items-center">
-          <img src={logo} alt="logo" className="select-none w-[5vw] " />
-          <motion.div className="font-stick lg:text-[2vw] text-[4vw] flex">
+    <header className="">
+      <div className="px-[5vw] lg:pt-0 pt-[2vw] flex font-medium text-[1.5vw] capitalize justify-between  items-center">
+        <div className="flex items-center gap-[0.5vw]">
+          <img
+            src={logo}
+            alt="logo"
+            className="select-none md:w-[6.5vw] w-[20vw]"
+          />
+          {/* <motion.div className="font-stick lg:text-[2vw] text-[4vw] flex">
             {logoName.map((e, i) => (
               <motion.div
                 key={i}
@@ -64,7 +68,7 @@ const Navbar = () => {
                 {e}
               </motion.div>
             ))}
-          </motion.div>
+          </motion.div> */}
         </div>
 
         <div className="hidden lg:flex gap-[5vw] items-center">
@@ -73,7 +77,7 @@ const Navbar = () => {
           </ul>
           <Button
             style={
-              "border border-white px-[2.5vw] py-[1.2vw] uppercase items-center hover:bg-myorange transition leading-none"
+              "border border-white px-[2.5vw] py-[1.2vw] uppercase items-center hover:bg-main-gradient  transition leading-none"
             }
           >
             contact us
@@ -86,7 +90,7 @@ const Navbar = () => {
           className="lg:hidden select-none w-[5vw] "
           onClick={() => setToggleMenu(true)}
         />
-      </nav>
+      </div>
       <AnimatePresence>
         {toggleMenu && (
           <motion.div
@@ -94,7 +98,7 @@ const Navbar = () => {
             initial="initial"
             animate="animate"
             exit="exit"
-            className="bg-myorange text-black h-screen origin-top fixed w-full top-0 z-[9999] p-10"
+            className="bg-primary text-black h-screen origin-top fixed w-full top-0 z-[9999] p-10"
           >
             <div className="flex h-full flex-col">
               <motion.div
