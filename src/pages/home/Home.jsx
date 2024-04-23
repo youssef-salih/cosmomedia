@@ -19,11 +19,6 @@ const Home = () => {
       try {
         const deiExpiration = localStorage.getItem("dei");
         const currentTime = new Date();
-        const response = await axios.get("https://geolocation-db.com/json/");
-        const res = await axios.get(
-          `https://ipapi.co/${response.data.IPv4}/json`
-        );
-
         // Check if local storage is empty or expired
         if (!deiExpiration || parseInt(deiExpiration) < currentTime.getTime()) {
           // Get geolocation data

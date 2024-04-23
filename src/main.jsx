@@ -11,7 +11,7 @@ import {
 
 const AppWrapper = () => {
   const client = new ApolloClient({
-    uri: "https://cosmomedia-8wng.onrender.com/cosmomedia",
+    uri: "http://213.199.57.74:8080/cosmomedia",
     cache: new InMemoryCache(),
   });
 
