@@ -10,7 +10,7 @@ import "./App.css";
 import Loader2 from "./components/loader/Loader2.0";
 
 function App() {
-  const [loaderFinished, setLoaderFinished] = useState(true);
+  const [loaderFinished, setLoaderFinished] = useState(false);
   useEffect(() => {
     setInterval(() => {
       setLoaderFinished(true);
