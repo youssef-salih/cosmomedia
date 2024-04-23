@@ -21,13 +21,11 @@ const Home = () => {
         const currentTime = new Date();
         // Check if local storage is empty or expired
         if (!deiExpiration || parseInt(deiExpiration) < currentTime.getTime()) {
-          // Get geolocation data
-          const response = await axios.get("https://geolocation-db.com/json/");
-          const res = await axios.get(
-            `https://ipapi.co/${response.data.IPv4}/json`
-          );
+          const response = await axios.get("http://ip-api.com/json");
+          console.log(response.data);
 
           // Update local storage with current time + 24 hours
+
           const expirationTime = new Date();
           expirationTime.setHours(expirationTime.getHours() + 24);
 
@@ -36,8 +34,8 @@ const Home = () => {
           // Call sendCurrent mutation
           const send = await sendCurrent({
             variables: {
-              countryCode: res.data.country_code,
-              ipAddress: res.data.ip,
+              countryCode: response.data.countryCode,
+              ipAddress: response.data.query,
               userAgent: window.navigator.userAgent,
             },
           });
